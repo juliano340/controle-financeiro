@@ -106,7 +106,7 @@ function renderLancamento(objLancamento) {
     //
 
     let spanValor = document.createElement('span');
-    spanValor.innerHTML = 'R$ ' + objLancamento.valor;
+    spanValor.innerHTML = 'R$ ' + parseFloat(objLancamento.valor).toFixed(2);
 
     let spanTipo = document.createElement('span');
 
@@ -293,3 +293,10 @@ function valorTotal() {
 
 
 }
+
+
+var currentTime = new Date();
+var year = currentTime.getFullYear()
+var footerContent = `Copyright © ${year} - juliano340.com`;
+var myFooter = document.querySelector("#myFooter");
+myFooter.innerHTML = footerContent;

@@ -287,3 +287,31 @@ input[type='radio']:checked:after {
 .green {
     color: green;
 }
+
+.myFooter{
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 30PX;
+    text-decoration:none;
+    font-size: 14px;
+    position:fixed;
+    bottom:0;
+    background-color: #2f999b;
+    color: #fff;
+    
+    
+}
+
+
+.myFooter a {
+    text-decoration:none;
+    color: black;
+    cursor:pointer;
+    color: #fff;
+}
