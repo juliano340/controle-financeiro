@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+   
+}
+
+.header {
+    background-color: #3ab4b6;
+    color: #fff;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -50px;
+    max-width: 900px;
+
+}
+
+.resume-items {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 0 40px 
+}
+
+.item-header h2 {
+    font-size: 18px;
+    color: #5b5b5b;
+}
+
+.item-header span {
+    font-size: 15px;
+    color: black;
+}
+
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    
+    margin: 15px 9px 0 9px;   
+    padding: 20px 50px;
+    width: 100%;
+
+    border-radius: 5px;
+    border: 1px solid #d3d1d1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #5b5b5b;
+    
+}
+
+.input-description {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    
+}
+
+.input-description label {
+    margin-bottom: 4px;
+    
+    
+}
+
+
+.input-radio-e-button {
+    margin-top: 10px;
+    width: 35%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.input-radio-e-button label {
+    padding-left: 3px;
+}
+
+input[type="text"] {
+    border: 1px solid #d3d1d1;
+    outline: 1;
+    outline-color: #757373;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3b3838;
+    height: 20px;
+}
+
+input[type="text"]::placeholder{
+
+    font-style: italic;
+}
+
+.input-radio-e-button button {
+    height: 35px;
+    width: 75px;
+    background-color: #3ab4b6;
+    border: 0;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 10px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.input-radio-e-button button:hover {
+
+    background-color: #2f999b;
+    transform: scale(.9);
+    transition-property: transform, box-shadow;
+    transition-duration: .3s;
+    
+}
+
+input[type='radio']:after {
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+
+.container-lancamentos {
+
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.lancamentos {
+
+    margin: 15px 9px;   
+    padding: 25px 50px;
+    width: 100%;
+    
+    border-radius: 5px;
+    border: 1px solid #d3d1d1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    
+    
+}
+
+.lancamentos-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    font-size: 17px;
+    font-weight: bold;
+    color: #3e3d3d;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    margin-bottom: 8px;
+    
+}
+
+.lancamento-descricao {
+    width: 25%;
+}
+
+.lancamento-valor {
+    width: 25%;
+}
+
+.lancamento-tipo {
+    width: 30%;
+}
+
+
+.itens-lancados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lancamento {
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lancamento span {
+    
+    width: 30%;
+}
+
+.delete {
+    
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+
+.delete:hover{
+    transform: scale(.9);
+    transition-property: transform, box-shadow;
+    transition-duration: .3s;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}

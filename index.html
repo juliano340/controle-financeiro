@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Controle Financeiro</title>
+</head>
+
+<body onload="renderLoad()">
+
+    <div class="header">
+        <h1>Controle Financeiro</h1>
+    </div>
+
+    <div class="resume">
+
+        <div class="resume-items">
+
+            <div class="item-header">
+                <h2>Entradas</h2>
+                <span class="material-symbols-outlined" style="font-size:25px;">
+                    arrow_circle_up
+                </span>
+            </div>
+
+            <div class="total" id="entradas"></div>
+
+        </div>
+
+        <div class="resume-items">
+            <div class="item-header">
+                <h2>Saídas</h2>
+                <span class="material-symbols-outlined" style="font-size:25px;">
+                    arrow_circle_down
+                </span>
+            </div>
+
+            <div class="total" id="saidas"></div>
+            
+        </div>
+        
+        <div class="resume-items">
+            
+            <div class="item-header">
+
+                    <h2>Total</h2>
+                    <span class="material-symbols-outlined" style="font-size:25px;">
+                        monetization_on
+                    </span>
+
+                </div>
+
+                <div class="total" id="total"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+
+        <div class="form">
+
+            <div class="input-description" id="input-description">
+                <label>Descrição</label>
+                <input type="text" id="input-desc" placeholder="Exemplo: Conta de Luz">
+            </div>
+            
+            <div class="input-description">
+                <label>Valor</label>
+                <input type="text" id="input-valor" placeholder="Exemplo: 105.90">
+            </div>
+            
+            <div class="input-radio-e-button">
+                
+                <input type="radio" id="entrada" name="tipoValor" value="entrada" checked>
+                <label for="entrada">Entrada</label>
+                
+                <input type="radio" id="saida" name="tipoValor" value="saida">
+                <label for="saida">Saída</label>
+                <button onclick="lancamento()">ADICIONAR</button>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-lancamentos">
+
+        <div class="lancamentos">
+    
+            <div class="lancamentos-header">
+                <div class="lancamento-descricao"> Descrição</div>
+                <div class="lancamento-valor">Valor</div>
+                <div class="lancamento-tipo">Tipo</div>
+           </div>
+
+
+<!-- AQUI VAO OS LANÇAMENTOS:  -->
+           <div class="itens-lancados" id="itens-lancados">
+
+            <!-- AQUI CADA LANÇAMENTO: -->
+            <!-- <div class="lancamento">
+                <span>conta de luz</span>
+                <span> 200.00</span>
+                <span>
+                    
+                    <span class="material-symbols-outlined">
+                    arrow_circle_down
+                     </span>
+                    
+                     <button class="delete" id="apagar" onclick="apagar()">
+                        
+                        <i class="material-symbols-outlined">
+                            delete
+                        </i>
+
+
+                     </button>
+
+                </span>
+                
+            </div> -->
+            <!-- FIM DE LANCAMENTO  -->
+
+
+
+           </div>
+
+    
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
